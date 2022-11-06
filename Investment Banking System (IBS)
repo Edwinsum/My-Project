@@ -13,43 +13,43 @@ while True:
     print("4. Quit")
 
     command = input()
+# add your code of Function 1 here
     if command == "1":
         print("1. USD TO HKD")
         print("2. Euro TO HKD")
         print("3. HKD TO Euro")
         print("4. HKD TO USD")
         print("5. Quit")
-
+        Choose = input()
         while True:
-        # add your code of Function 1 here
-                Choose = input()
-                if Choose == "1":
-                    USD = float(input("Amount to be converted: "))
-                    HKD = USD * USD_RATE
-                    print("HKD = ", HKD, "HKD")
-                    print()
-                    break
-                elif Choose == "2":
-                    EURO = float(input("Amount to be converted: "))
-                    HKD = EURO * EURO_RATE
-                    print("HKD = ", HKD, "HKD")
-                    print()
-                    break
-                elif Choose == "3":
-                    HKD = float(input("Amount to be converted: "))
-                    USD = HKD / USD_RATE
-                    print("USD = ", USD, "USD")
-                    print()
-                    break
-                elif Choose == "4":
-                    HKD = float(input("Amount to be converted: "))
-                    EURO = HKD / EURO_RATE
-                    print("EURO = ", EURO, "EURO")
-                    print()
-                    break
-                elif Choose == "5":
-                    print("")
-                    break
+            
+            if Choose == "1":
+                USD = float(input("Amount to be converted: "))
+                HKD = USD * USD_RATE
+                print("HKD = ", HKD, "HKD")
+                print()
+                break
+            elif Choose == "2":
+                EURO = float(input("Amount to be converted: "))
+                HKD = EURO * EURO_RATE
+                print("HKD = ", HKD, "HKD")
+                print()
+                break
+            elif Choose == "3":
+                HKD = float(input("Amount to be converted: "))
+                USD = HKD / USD_RATE
+                print("USD = ", USD, "USD")
+                print()
+                break
+            elif Choose == "4":
+                HKD = float(input("Amount to be converted: "))
+                EURO = HKD / EURO_RATE
+                print("EURO = ", EURO, "EURO")
+                print()
+                break
+            elif Choose == "5":
+                print("")
+                break
 
 # add your code of Function 2 here
 #     elif command == "2":
