@@ -1,0 +1,64 @@
+"""
+ITE3919 - Programming Essentials in Python (Mini Project)
+Student Name: <<Your Name>>
+Student No: <<Your Student No.>>
+"""
+EURO_RATE = 8.02
+USD_RATE = 7.75
+while True:
+    print("Welcome to IBS! Please choose one of the following functions")
+    print("1. Converting Euro or USD to HKD")
+    print("2. Calculating the minimum number of coins")
+    print("3. Calculating the total amount of principle and compound interest")
+    print("4. Quit")
+
+    command = input()
+    if command == "1":
+        print("1. USD TO HKD")
+        print("2. Euro TO HKD")
+        print("3. HKD TO Euro")
+        print("4. HKD TO USD")
+        print("5. Quit")
+
+        while True:
+        # add your code of Function 1 here
+                Choose = input()
+                if Choose == "1":
+                    USD = float(input("Amount to be converted: "))
+                    HKD = USD * USD_RATE
+                    print("HKD = ", HKD, "HKD")
+                    print()
+                    break
+                elif Choose == "2":
+                    EURO = float(input("Amount to be converted: "))
+                    HKD = EURO * EURO_RATE
+                    print("HKD = ", HKD, "HKD")
+                    print()
+                    break
+                elif Choose == "3":
+                    HKD = float(input("Amount to be converted: "))
+                    USD = HKD / USD_RATE
+                    print("USD = ", USD, "USD")
+                    print()
+                    break
+                elif Choose == "4":
+                    HKD = float(input("Amount to be converted: "))
+                    EURO = HKD / EURO_RATE
+                    print("EURO = ", EURO, "EURO")
+                    print()
+                    break
+                elif Choose == "5":
+                    print("")
+                    break
+
+# add your code of Function 2 here
+#     elif command == "2":
+#
+#
+# # add your code of Function 3 here
+#     elif command == "3":
+
+    elif command == "4":
+
+        print("Thanks for using IBS! Bye!")
+        break
